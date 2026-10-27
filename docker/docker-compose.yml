@@ -44,7 +44,6 @@ services:
       - "3001:3000"
     volumes:
       - ../packages/ui:/app
-      - /app/node_modules
     # Deliberately NO env_file here: this container runs `npm install` at
     # boot, and npm postinstall scripts can read process.env — so the UI
     # gets only the variables it actually uses, not the backend's provider
