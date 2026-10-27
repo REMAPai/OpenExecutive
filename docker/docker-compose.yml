@@ -53,7 +53,7 @@ services:
     # from exported shell variables. Auth.js needs the AUTH_* set at
     # runtime — without them sign-in fails with MissingSecret (issue #44).
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=production
       # Reach the API over the compose network (the UI proxy/auth default of
       # localhost:8000 resolves to the UI container itself, not the API).
       - BACKEND_BASE_URL=http://api:8000
